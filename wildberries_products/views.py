@@ -1,6 +1,7 @@
 from io import BytesIO
 
 import openpyxl
+from django.shortcuts import redirect
 from rest_framework.response import Response
 from rest_framework.viewsets import ViewSet
 
@@ -41,3 +42,7 @@ class UploadExelViewSet(ViewSet):
             return Response(data)
         except Exception:
             return Response("File data is not valid")
+
+
+def main_page(request):
+    return redirect("upload-list")
