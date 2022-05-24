@@ -15,7 +15,7 @@ class UploadExelViewSet(ViewSet):
         return Response("Chose the xlsx file")
 
     def create(self, request):
-        file_uploaded = request.FILES.get("file_uploaded")
+        file_uploaded = request.FILES.get("file")
         file_name = file_uploaded.name
         if not file_name.endswith(".xlsx"):
             return Response(

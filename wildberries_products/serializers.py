@@ -2,7 +2,7 @@ from rest_framework.serializers import FileField, Serializer
 
 
 class UploadExelSerializer(Serializer):
-    file_uploaded = FileField()
+    file = FileField()
 
     class Meta:
-        fields = ["exel_uploaded"]
+        fields = ["file"]
