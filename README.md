@@ -1,4 +1,4 @@
-Anatoli Piven test task for Productlab
+test task for Productlab
 
 Clone project  
 cd test_task-productlab  
